@@ -9,7 +9,7 @@ export const fetchTeams = () => (dispatch) => {
     .get("http://127.0.0.1:8000/teams")
     .then(async (res) => {
       let result = await myAdapter.toTeam(res.data);
-      console.log("We got:", result);
+      console.log("We got the following from the server:", result);
       dispatch({
         type: types.FETCH_TEAMS,
         payload: result,

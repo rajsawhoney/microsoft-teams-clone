@@ -27,7 +27,6 @@ class TeamAdapter {
   };
 
   toTeam = async (teams) => {
-    console.log("Method called!", teams);
     return await teams.map((team) => {
       const getF = async () => await this.featchFeatures(team);
       const getR = async () =>
