@@ -1,0 +1,4 @@
+export const INITIALIZE_SOCKET = "INITIALIZE_SOCKET";
+export const INITIALIZE_PC = "INITIALIZE_PC";
+export const MAKECALL = "MAKECALL";
+export const ENDCALL = "ENDCALL";

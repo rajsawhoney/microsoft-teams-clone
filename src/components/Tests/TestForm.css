@@ -1,0 +1,132 @@
+.test__form__container {
+  width: 100%;
+  padding: 5% 10%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.test__form__group,
+.comment__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.test__form__group > input {
+  padding: 3.4% 10%;
+  border: 0.1px solid gray;
+  width: 100%;
+  text-align: center;
+  margin: 8px 0;
+  outline: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.test__form__group > button {
+  padding: 3.3%;
+  width: 17em;
+  position: relative;
+  outline: none;
+  margin-top: 5%;
+  bottom: 0px;
+  left: 0px;
+  font-size: 1rem;
+  background-color: rgb(184, 221, 96);
+  cursor: pointer;
+  border-width: 0;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+.test__form__group > button:hover {
+  background-color: rgb(174, 226, 52);
+}
+
+.form__error__msg {
+  color: rgb(214, 145, 16);
+  border: 0.1px solid lightgray;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.comment__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.comment__list > span {
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 22px;
+  padding: 0px 3px 0px 8px;
+  margin: 5px;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.comment__form > input {
+  padding: 10px;
+  width: 20em;
+  margin: 5px 0;
+  border-radius: 20px;
+  outline: none;
+  border-width: 0.1px;
+  background-color: beige;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.comment__form > button {
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  outline: none;
+  border-width: 0;
+  padding: 4px 10px;
+  border-radius: 16px;
+  background: rgb(35, 156, 156);
+  color: white;
+}
+
+.comment__form > button:hover {
+  background: rgb(8, 206, 206);
+}
+
+.comment__list > span > .MuiSvgIcon-root {
+  color: rgba(218, 68, 68, 0.781);
+  font-size: 1rem;
+}
+.comment__list > span > .MuiSvgIcon-root:hover {
+  color: rgba(247, 41, 41, 0.897);
+  cursor: pointer;
+}
+
+.react-date-picker__wrapper {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 40px;
+  padding: 4px 4rem;
+}
+
+.team_list {
+  background: rgba(42, 65, 65, 0.13);
+  padding: 20px 5px;
+  margin: 10px;
+  width: 100%;
+}

@@ -1,0 +1,31 @@
+.sidebar__main {
+  background-color: var(--app-color);
+  max-width: 224px;
+  height: 100vh;
+  color: rgba(240, 248, 255, 0.794);
+}
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 7vh;
+  border-bottom: 0.2px solid rgba(211, 211, 211, 0.377);
+}
+
+.sidebar__header > h2 {
+  font-size: medium;
+  color: white;
+}
+
+.sidebar__header > .MuiSvgIcon-root {
+  background-color: white;
+  font-size: 30px;
+  padding: 5px;
+  color: var(--app-color);
+  border-radius: 999px;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  -ms-border-radius: 999px;
+  -o-border-radius: 999px;
+}

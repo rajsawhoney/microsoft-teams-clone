@@ -1,0 +1,150 @@
+.profile-loader {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: loader-animation infinite 1.5s linear;
+}
+
+.profile-loader--small {
+  height: 30px;
+  width: 30px;
+}
+
+.profile-loader {
+  color: #0073b1;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: visible;
+  margin: 8px;
+  display: inline-block;
+}
+
+@keyframes loader-animation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.profile-loader__bars {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.profile-loader--small .profile-loader__bars:before {
+  height: 5px;
+}
+
+.profile-loader__bars:before {
+  content: "";
+  display: block;
+  width: 0;
+  margin: 0 auto;
+  height: 14px;
+  border: 1px solid;
+  border-radius: 1px;
+  /* animation: loader-animation 1s linear infinite both; */
+}
+
+.profile-loader__bars:first-of-type {
+  transform: rotate(-30deg);
+}
+
+.profile-loader__bars:nth-of-type(2) {
+  transform: rotate(-60deg);
+}
+
+.profile-loader__bars:nth-of-type(3) {
+  transform: rotate(-90deg);
+}
+
+.profile-loader__bars:nth-of-type(4) {
+  transform: rotate(-120deg);
+}
+
+.profile-loader__bars:nth-of-type(5) {
+  transform: rotate(-150deg);
+}
+
+.profile-loader__bars:nth-of-type(6) {
+  transform: rotate(-180deg);
+}
+
+.profile-loader__bars:nth-of-type(7) {
+  transform: rotate(-210deg);
+}
+
+.profile-loader__bars:nth-of-type(8) {
+  transform: rotate(-240deg);
+}
+
+.profile-loader__bars:nth-of-type(9) {
+  transform: rotate(-270deg);
+}
+
+.profile-loader__bars:nth-of-type(10) {
+  transform: rotate(-300deg);
+}
+
+.profile-loader__bars:nth-of-type(11) {
+  transform: rotate(-330deg);
+}
+
+.profile-loader__bars:nth-of-type(12) {
+  transform: rotate(-1turn);
+}
+
+.profile-loader__bars:first-of-type:before {
+  animation-delay: -83.33333ms;
+}
+
+.profile-loader__bars:nth-of-type(2):before {
+  animation-delay: -166.66667ms;
+}
+
+.profile-loader__bars:nth-of-type(3):before {
+  animation-delay: -0.25s;
+}
+
+.profile-loader__bars:nth-of-type(4):before {
+  animation-delay: -0.33333333s;
+}
+
+.profile-loader__bars:nth-of-type(5):before {
+  animation-delay: -0.41666667s;
+}
+
+.profile-loader__bars:nth-of-type(6):before {
+  animation-delay: -0.5s;
+}
+
+.profile-loader__bars:nth-of-type(7):before {
+  animation-delay: -583.33333ms;
+}
+
+.profile-loader__bars:nth-of-type(8):before {
+  animation-delay: -666.66667ms;
+}
+
+.profile-loader__bars:nth-of-type(9):before {
+  animation-delay: -0.75s;
+}
+
+.profile-loader__bars:nth-of-type(10):before {
+  animation-delay: -833.33333ms;
+}
+
+.profile-loader__bars:nth-of-type(11):before {
+  animation-delay: -916.66667ms;
+}
+
+.profile-loader__bars:nth-of-type(12):before {
+  animation-delay: -1s;
+}

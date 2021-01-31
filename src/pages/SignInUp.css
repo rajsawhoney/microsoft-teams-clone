@@ -1,0 +1,162 @@
+.signinup__main {
+  background: linear-gradient(45deg, rgb(192, 179, 179), gray, transparent);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signinup__body {
+  padding: 2rem;
+  background: white;
+  width: 500px;
+  height: fit-content;
+  max-width: 500px;
+  min-width: auto;
+  box-shadow: 0px 1px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.signinup__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -32px;
+}
+
+.signinup__header > h2 {
+  text-align: center;
+  margin-left: 6rem;
+  color: rgb(17, 99, 72);
+}
+.company__icon {
+  object-fit: contain;
+  width: 130px;
+}
+
+@media only screen and (max-width: 768px) {
+  .signinup__body {
+    width: 270px;
+    max-width: 500px;
+  }
+
+  .signinup__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -32px;
+  }
+
+  .signinup__header > h2 {
+    text-align: center;
+    margin-left: unset !important;
+    margin-top: -15px;
+    color: rgb(93, 115, 126);
+  }
+}
+
+.form-group {
+  width: 95%;
+  box-sizing: border-box;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0px 5px 0px;
+  font-size: medium;
+  font-weight: lighter;
+  outline-width: 0px;
+  border: 0px;
+  background-color: rgba(195, 225, 226, 0.185);
+}
+.form-control:focus {
+  background-color: rgba(195, 225, 226, 0.452);
+  border-bottom: 2px solid rgba(76, 76, 192, 0.877);
+}
+
+.form-text {
+  color: darkgrey;
+  font-size: small;
+}
+
+.submit__btn {
+  margin-top: 10px;
+  display: block;
+  padding: 5px 10px;
+  width: 100%;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 20px;
+  background: linear-gradient(45deg, transparent, rgb(21, 112, 197));
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.submit__btn:hover {
+  cursor: pointer;
+  background: linear-gradient(45deg, rgb(21, 112, 197), transparent);
+}
+
+.submit__btn:focus {
+  outline-width: 0;
+}
+
+.alternatives {
+  float: right;
+  text-decoration: none;
+  padding: 5px;
+  background: rgba(180, 191, 206, 0.089);
+}
+.alternatives:hover {
+  text-decoration: underline;
+  color: rgb(30, 30, 190);
+  font-size: large;
+}
+
+.Or {
+  position: relative;
+  margin-left: 12rem;
+  margin-bottom: -5px;
+  color: rgb(153, 11, 219);
+}
+
+.login__withGoogle {
+  display: block;
+  width: 100%;
+  color: blue;
+  font-size: small;
+  font-weight: bold;
+  border-radius: 999px !important;
+  background-color: rgba(216, 209, 216, 0.568);
+  -webkit-border-radius: 999px !important;
+  -moz-border-radius: 999px !important;
+  -ms-border-radius: 999px !important;
+  -o-border-radius: 999px !important;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__withGoogle:hover {
+  cursor: pointer;
+  background: rgba(15, 100, 109, 0.37);
+}
+
+.login__withGoogle:focus {
+  outline-width: 0;
+}
+
+.google_icon {
+  object-fit: contain;
+  width: 30px;
+}

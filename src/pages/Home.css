@@ -1,0 +1,185 @@
+.home__main {
+  display: flex;
+}
+
+.home__container {
+  flex: 80;
+  height: 91vh;
+  color: white;
+  overflow-y: scroll;
+  text-align: center;
+  background: linear-gradient(180deg, black, rgba(12, 10, 40, 0.19), black),
+    url("./microsoftbg.jpg");
+  background-position: center;
+  object-fit: contain;
+  padding: 10px;
+  background-size: cover;
+}
+
+.home__container > h2 {
+  padding: 20px;
+  font-size: 2.2rem;
+}
+
+.home__container > p {
+  font-size: 18px;
+  text-shadow: 3px 2px 15px black;
+  padding: 1vh;
+}
+
+.short__info > p {
+  font-size: 18px;
+  text-shadow: 3px 2px 15px black;
+}
+
+.footer {
+  margin-top: 80px;
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(45deg, #000, #012, #000);
+  box-shadow: 0 1px 9px;
+}
+.footer > p {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.footer > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  flex-flow: wrap !important;
+  font-size: 1.5rem;
+}
+.footer > ul > li > a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.footer > ul > li > a:hover {
+  color: lightblue;
+  font-size: 1.6rem;
+}
+
+.footer > ul > li > a > .MuiSvgIcon-root:hover {
+  color: rgb(37, 186, 223);
+}
+
+.footer > ul > li > a > .MuiSvgIcon-root {
+  font-size: 2.5rem;
+  margin-right: 5px;
+}
+
+.side__stuffs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+  overflow-y: scroll;
+  height: 90vh;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.side__stuffs::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.side__stuffs {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media only screen and (max-width: 500px) {
+  .home__container {
+    position: fixed;
+    top: 8%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(180deg, black, rgba(12, 10, 40, 0.19), black),
+      url("./microsoftbg.jpg");
+    flex: 80;
+  }
+
+  .home__container > h2 {
+    font-size: medium !important;
+    padding: initial !important;
+  }
+
+  .home__container > p {
+    font-size: small !important;
+  }
+
+  .short__info > p {
+    font-size: small !important;
+    text-shadow: 3px 2px 15px black;
+  }
+
+  .footer {
+    margin-top: auto !important;
+    width: auto !important;
+    padding: initial !important;
+    width: auto !important;
+    float: none !important;
+  }
+  .footer > p {
+    font-size: initial !important;
+  }
+  .footer > ul {
+    justify-content: end !important;
+    font-size: initial !important;
+  }
+  .footer > ul > li > a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: unset !important;
+    align-items: center;
+  }
+
+  .footer > ul > li > a:hover {
+    color: lightblue;
+    font-size: unset !important;
+  }
+
+  .footer > ul > li > a > .MuiSvgIcon-root {
+    font-size: unset !important;
+    margin-right: 5px;
+  }
+
+  .side__stuffs {
+    display: none !important;
+  }
+
+  .hire-me-sec > p {
+    font-size: 1rem !important;
+  }
+}
+
+.hire-me-sec {
+  text-decoration: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hire-me-sec > .MuiSvgIcon-root {
+  font-size: 1.8rem;
+  margin-bottom: 0px;
+}
+
+.hire-me-sec > .MuiSvgIcon-root:hover {
+  color: rgb(37, 186, 223);
+}
+.hire-me-sec > p {
+  font-size: 1.5rem;
+  margin-top: 0px;
+  color: white;
+}

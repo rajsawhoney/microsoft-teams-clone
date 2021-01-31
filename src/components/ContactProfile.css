@@ -1,0 +1,72 @@
+.profile__main {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.profile__main > .MuiAvatar-root {
+  margin-right: 8px;
+}
+
+.profile__main:hover {
+  background-color: rgba(161, 156, 156, 0.26);
+  cursor: pointer;
+}
+
+.name-time-stamp-container {
+  display: flex;
+  align-items: center;
+  justify-self: space-between;
+  margin-bottom: -10px;
+}
+
+.name-time-stamp-container > h3 {
+  font-weight: lighter;
+  font-size: smaller;
+  width: max-content;
+  color: rgba(0, 0, 0, 0.856);
+}
+
+.last-seen-time-stamp {
+  color: rgba(0, 0, 0, 0.568) !important;
+  width: fit-content;
+  align-content: flex-end;
+  margin-left: 3rem;
+}
+
+.profile__info > p {
+  margin-top: 0px;
+  font-size: small;
+}
+
+.profile__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile__main {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .profile__info > h3 {
+    font-size: inherit;
+    font-weight: bold;
+    width: max-content;
+    text-align: center;
+  }
+
+  .profile__info > p {
+    display: none;
+  }
+  .profile__main > span {
+    display: none;
+  }
+
+  .last-seen-time-stamp {
+    display: none;
+  }
+}

@@ -1,0 +1,124 @@
+.chat__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.chat__main::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.chat__main {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.chat__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.3px solid rgba(211, 211, 211, 0.472);
+  width: 100%;
+  padding: 0 8px 0 8px;
+}
+
+.chat__headerLeft {
+  display: flex;
+  align-items: baseline;
+}
+
+.chat__headerLeft > .MuiSvgIcon-root {
+  cursor: pointer;
+}
+
+.chat__headerRight {
+  display: flex;
+  color: rgb(104, 96, 96);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat__headerRight > .MuiSvgIcon-root {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.chat__recentHeader {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  color: rgb(119, 115, 115);
+}
+
+.chat__recentList {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.chat__recentList::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.chat__recentList {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.chat__recentList > a {
+  text-decoration: none;
+}
+/* put here */
+
+@media only screen and (max-width: 500px) {
+  .chat__main {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    overflow-x: scroll !important;
+    width: 100% !important;
+  }
+
+  .chat__main::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .chat__main {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .chat__header {
+    width: 70%;
+    border-bottom: unset;
+  }
+
+  .chat__recentHeader,
+  .chat__headerRight {
+    display: none !important;
+  }
+
+  .chat__headerLeft {
+    margin-left: 15px !important;
+    padding: 0px !important;
+  }
+  .chat__recentList {
+    display: flex !important;
+    justify-content: flex-start;
+    margin-left: -20px !important;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .chat__recentList > a {
+    text-decoration: none;
+    margin-left: 30px !important;
+  }
+}

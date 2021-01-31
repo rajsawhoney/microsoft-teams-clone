@@ -1,0 +1,199 @@
+.profile__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px !important;
+  padding: 10px;
+}
+.profile__header {
+  display: flex;
+  align-items: center;
+}
+
+.profile__header > .MuiAvatar-root {
+  width: 60px;
+  height: 60px;
+  margin-right: 6px;
+}
+
+.profile__header > h4 {
+  margin-bottom: 0px;
+}
+.profile__header > h4 > p {
+  margin-top: 0px;
+  color: rgb(100, 89, 89);
+  cursor: pointer;
+}
+
+.name__profile__control__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: flex-start;
+}
+
+.name__profile__control__wrapper > h4 {
+  margin-bottom: 0px;
+}
+
+.name_editable {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.name__profile__control__wrapper > p {
+  margin-top: 0px;
+}
+
+.name__profile__control__wrapper > p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.profile__onlineStatus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.profile__onlineStatus:hover {
+  background-color: rgba(243, 242, 239, 0.705);
+}
+
+.availableWithIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.availableWithIcon > .MuiSvgIcon-root {
+  color: rgb(82, 158, 6) !important;
+  font-size: small;
+  margin-right: 10px;
+}
+
+.profile__onlineStatus > p {
+  font-size: larger;
+}
+
+.profile__status {
+  width: 95%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  align-self: center;
+  background-color: rgba(243, 242, 239, 0.705);
+}
+
+.display_name_btn {
+  margin-left: 2rem;
+  padding: 5px 10px 5px 10px;
+  background-color: rgba(90, 90, 231, 0.925);
+  width: 4rem;
+  border: none;
+  color: white;
+}
+
+.display_name_btn:hover {
+  background-color: rgba(64, 64, 204, 0.979);
+  cursor: pointer;
+}
+
+.profile__status:focus {
+  outline-width: 1px;
+  outline-color: rgb(44, 134, 207) !important;
+  box-shadow: 0 1px 3px;
+  height: 35% !important;
+  background-color: white;
+}
+
+.profile__status__submit__btn {
+  width: fit-content;
+  align-self: flex-end;
+  padding: 5px 10px 5px 10px;
+  margin-top: 5px;
+  margin-right: 10px;
+  background-color: rgba(90, 90, 231, 0.925);
+  width: 4rem;
+  border: none;
+  color: white;
+}
+
+.profile__status__submit__btn:hover {
+  background-color: rgba(64, 64, 204, 0.979);
+  cursor: pointer;
+}
+
+.profile__status__edit__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile__status__edit__buttons > .MuiSvgIcon-root {
+  color: rgba(0, 0, 0, 0.514);
+}
+
+.profile__status__edit__buttons > .MuiSvgIcon-root:hover {
+  color: rgba(0, 0, 0, 0.746);
+  cursor: pointer;
+}
+
+.profile__settingStuffs {
+  margin-top: 15px;
+}
+
+.badgeIcon {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+  cursor: pointer;
+}
+
+.badgeIcon:hover {
+  background-color: rgba(243, 242, 239, 0.705);
+}
+
+.badgeIcon > .MuiSvgIcon-root {
+  margin-right: 10px;
+  color: rgb(87, 85, 82);
+}
+.profile__about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile__extras {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.profile__extras > p {
+  margin: 6px;
+  padding: 5px;
+}
+
+.profile__extras > p:hover {
+  background-color: rgba(243, 242, 239, 0.705);
+}
+
+.profile__about > p {
+  margin: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.profile__about:hover {
+  background-color: rgba(243, 242, 239, 0.705);
+}
+
+.signout__btn {
+  font-size: 16px;
+  padding: 10px;
+}
+.signout__btn:hover {
+  background-color: rgba(243, 242, 239, 0.705);
+  cursor: pointer;
+}

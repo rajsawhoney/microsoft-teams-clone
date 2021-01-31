@@ -1,0 +1,117 @@
+.jss1 {
+  margin-top: 54px !important;
+}
+
+.navbar__header {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  height: 54px;
+}
+
+.navbar__headerRight > .MuiAvatar-root:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 255, 0.342);
+}
+
+.navbar__headerLeft {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.navbar__headerLeft > h2 {
+  margin-left: 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.navbar__headerLeft > h2 > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.search__box {
+  border: 1px solid rgb(127, 131, 127);
+  width: 40vw;
+  background-color: rgba(255, 255, 255, 0.918);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 20px;
+  padding: 1px 10px 1px 10px;
+}
+
+.search__boxClear {
+  background: rgb(241, 236, 236);
+}
+
+.search__boxClear:hover {
+  color: rgb(100, 100, 211) !important;
+}
+
+@media only screen and (min-width: 769px) {
+  .search__box {
+    margin-left: 7rem;
+  }
+}
+
+.search__box > input {
+  border: none;
+  padding: 8px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.89);
+  background-color: transparent;
+}
+
+.search__box > input:focus {
+  outline-width: 0px;
+  place-self: 10px top;
+}
+
+.search__box > .MuiSvgIcon-root {
+  color: gray;
+}
+.navbar__headerRight {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .makeStyles-appBar-2 {
+    padding: 10px !important;
+  }
+
+  .navbar__header {
+    justify-content: space-between !important;
+  }
+
+  .search__box {
+    width: 60vw !important;
+    margin-right: 5px !important;
+  }
+
+  .navbar__headerRight {
+    flex: 0.1 !important;
+  }
+
+  .navbar__headerLeft {
+    flex: 0.9 !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-left: 0rem !important;
+  }
+
+  .navbar__headerLeft > h2 {
+    margin-left: -1px !important;
+    text-align: center !important;
+    font-size: 12px !important;
+  }
+}

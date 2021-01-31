@@ -1,0 +1,95 @@
+.callui__main {
+    background-color: #1b1a1a;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .callui__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .my__video__area > video {
+    width: 20%;
+    border: 3px solid lightsteelblue;
+    position: fixed;
+    right: 2%;
+    top: 12%;
+  }
+
+  .partner__video__area > video {
+    width: 49vw;
+    height: 61vh;
+    position: fixed;
+    left: 4px;
+    top: 59px;
+  }
+
+  .partner__video__area {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 80px;
+    top: 60px;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    height: 26vh;
+    background-color: rgba(137, 43, 226, 0.157);
+    color: white;
+    text-align: center;
+  }
+
+  .callui__profile__avatar > .MuiAvatar-root {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 10px black;
+  }
+
+  .callui__calling__status {
+    margin-top: -10px;
+    color: white;
+    font-size: larger;
+  }
+
+  .callui__displayName {
+    color: white;
+    font-size: larger;
+    margin-top: -30px;
+  }
+
+  .callui__control__buttons__container {
+    display: flex;
+    align-items: center;
+  }
+
+  .control__button {
+    background-color: rgba(68, 68, 56, 0.705);
+    padding: 10px;
+    clear: both;
+    color: white;
+    border: 0.1px solid rgba(0, 0, 0, 0.322);
+  }
+
+  .control__button > .MuiSvgIcon-root {
+    color: white;
+  }
+
+  .control__button:hover {
+    background-color: rgba(0, 0, 0, 0.149);
+    cursor: pointer;
+  }
+
+  .end__call__btn {
+    background-color: rgba(161, 13, 13, 0.938);
+  }
+
+
+  .end__call__btn:hover {
+      background-color: rgba(235, 16, 16, 0.938);
+    }
