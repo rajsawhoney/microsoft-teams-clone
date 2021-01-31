@@ -10,6 +10,7 @@ export const fetchTeams = () => (dispatch) => {
     .then(async (res) => {
       let result = await myAdapter.toTeam(res.data);
       console.log("We got the following results from the server:", result);
+      console.log("Changes from test-branch!!");
       dispatch({
         type: types.FETCH_TEAMS,
         payload: result,
