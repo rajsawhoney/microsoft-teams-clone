@@ -5,7 +5,7 @@ const AppsComp = () => {
   return (
     <>
       <h2>Enter to Play</h2>
-      <a
+      <Link
         className={{
           fontSize: "2rem",
           textDecoration: "unset",
@@ -13,10 +13,10 @@ const AppsComp = () => {
           textShadow: "2px 1px 2px green",
           cursor: "pointer",
         }}
-        href="/#/apps/play-piono"
+        to="/#/apps/play-piono"
       >
         Piono
-      </a>
+      </Link>
       <a
         className={{
           fontSize: "2rem",
