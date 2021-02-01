@@ -13,7 +13,7 @@ const AppsComp = () => {
           textShadow: "2px 1px 2px green",
           cursor: "pointer",
         }}
-        to="/#/apps/play-piono"
+        to="/apps/play-piono"
       >
         Piono
       </Link>
@@ -25,7 +25,7 @@ const AppsComp = () => {
           textShadow: "2px 1px 2px green",
           cursor: "pointer",
         }}
-        href="/#/apps/play-drum"
+        href="/apps/play-drum"
       >
         Drum
       </a>
