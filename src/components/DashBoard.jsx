@@ -45,6 +45,7 @@ import Welcome from "../pages/Home";
 import CallerUI from "./medias/CallerUI";
 import IncomingCall from "./medias/IncomingCall";
 import TestForm from "../components/Tests/TestForm";
+import AppComp from "./drawers/AppsComp";
 
 const drawerWidth = 80;
 const useStyles = makeStyles((theme) => ({
@@ -193,12 +194,11 @@ function DashBoard({
                 path="/incoming-call/:userId/:roomId"
                 component={IncomingCall}
               />
-              <Route exact path="/play-piono" component={Piono} />
-              <Route exact path="/play-drum" component={DrumKit} />
 
               <div className="sidebar__viewarea">
                 {[
                   { path: "/activity", comp: <Activity /> },
+                  { path: "/apps", comp: <AppComp /> },
                   {
                     path: "/chat",
                     comp: <Chat user_profiles={user_profiles} />,
@@ -242,6 +242,8 @@ function DashBoard({
                 />
 
                 <Route exact path="/teams/detail/" component={TestForm} />
+                <Route exact path="/apps/play-piono" component={Piono} />
+                <Route exact path="/apps/play-drum" component={DrumKit} />
               </div>
             </main>
           </div>
