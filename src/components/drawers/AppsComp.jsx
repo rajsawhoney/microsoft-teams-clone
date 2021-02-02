@@ -17,7 +17,7 @@ const AppsComp = () => {
       >
         Piono
       </Link>
-      <a
+      <Link
         className={{
           fontSize: "2rem",
           textDecoration: "unset",
@@ -25,10 +25,10 @@ const AppsComp = () => {
           textShadow: "2px 1px 2px green",
           cursor: "pointer",
         }}
-        href="/apps/play-drum"
+        to="/apps/play-drum"
       >
         Drum
-      </a>
+      </Link>
     </>
   );
 };
